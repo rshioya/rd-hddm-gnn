@@ -63,3 +63,14 @@ See [`CITATION.cff`](CITATION.cff). Add the journal DOI and Zenodo version DOI a
 ## License
 
 Code is released under the MIT License. Confirm that all third-party code and data permit redistribution before publication.
+
+<!-- DOI-METADATA:BEGIN -->
+## Archived release
+
+The public reproducibility package is archived on Zenodo.
+
+- DOI: https://doi.org/10.5281/zenodo.22769372
+- GitHub repository: https://github.com/rshioya/rd-hddm-gnn
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22769372.svg)](https://doi.org/10.5281/zenodo.22769372)
+<!-- DOI-METADATA:END -->

@@ -1,21 +1,28 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the software release and associated paper."
-title: "RD-HDDM-GNN"
+message: If you use this software, please cite the software release and associated
+  paper.
+title: RD-HDDM-GNN
 type: software-code
 authors:
-  - family-names: "Liu"
-    given-names: "Sihan"
-  - family-names: "Okatani"
-    given-names: "Natsumi"
-  - family-names: "Shioya"
-    given-names: "Ryuji"
-version: "1.0.0"
-date-released: "2026-09-15"
-repository-code: "https://github.com/rshioya/rd-hddm-gnn"
-license: "MIT"
+- family-names: Liu
+  given-names: Sihan
+- family-names: Okatani
+  given-names: Natsumi
+- family-names: Shioya
+  given-names: Ryuji
+version: 1.0.0
+date-released: '2026-09-15'
+repository-code: https://github.com/rshioya/rd-hddm-gnn
+license: MIT
 keywords:
-  - graph neural network
-  - temperature-field reconstruction
-  - sparse sensing
-  - domain decomposition
-  - residual correction
+- graph neural network
+- temperature-field reconstruction
+- sparse sensing
+- domain decomposition
+- residual correction
+doi: 10.5281/zenodo.22769372
+url: https://doi.org/10.5281/zenodo.22769372
+identifiers:
+- type: doi
+  value: 10.5281/zenodo.22769372
+  description: Zenodo archive of the public reproducibility package

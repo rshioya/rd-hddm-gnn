@@ -5,5 +5,9 @@
   "copied_or_generated_files": 177,
   "private_implementation_copied": false,
   "original_build_report_copied": false,
-  "package_directory": "."
+  "package_directory": ".",
+  "zenodo_doi": "10.5281/zenodo.22769372",
+  "zenodo_url": "https://doi.org/10.5281/zenodo.22769372",
+  "github_repository": "https://github.com/rshioya/rd-hddm-gnn",
+  "doi_metadata_updated_utc": "2026-09-15T13:44:48.361769+00:00"
 }

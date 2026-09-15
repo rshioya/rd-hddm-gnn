@@ -1,9 +1,10 @@
 source,destination,size_bytes,sha256,action,note
 CHANGELOG.md,CHANGELOG.md,202,496564eaf9ea5e0f1e9518a2668070fe88bf80d2193501522835757f98912795,copy,
-CITATION.cff,CITATION.cff,575,647689b2702fa50ebbc89d043855b0d152e150518c0467bf2d7478e2f6c7f158,copy,
-[generated],CODE_AVAILABILITY.md,575,90d8a02115998fabd980487d8e5bb56042a69f597dbf7c3a912ee8089bcc177d,generated,
+CITATION.cff,CITATION.cff,733,3137319f62c37cb402ed8a1a1d73692222d3d65cc225426d57e3790de4674984,doi-metadata-update,Zenodo DOI metadata
+[generated],CODE_AVAILABILITY.md,1205,a685c249f2a0e820361746fe9193db420fa23aa307847808503f0d99746f3f71,doi-metadata-update,Zenodo DOI metadata
 LICENSE,LICENSE,1101,5e65c4ca755bfb305f78c92bbcc4fef43509e6c6cdb5011362088d9b229766fb,copy,
-README.md,README.md,2349,a7b238ac598c72b6ceb6000c00357bb5fcfc646fafc1c0b0bbcb39ffcfc1db8e,sanitized-copy,replaced placeholder: TO_BE_ADDED
+[metadata update],PACKAGE_BUILD_REPORT.json,523,38e3d782e1b5c49f6d8e152cc38ffbf1f281a091b50b26eaaab6a98c8c298abd,doi-metadata-update,Zenodo DOI metadata
+README.md,README.md,2700,b84c81e045e942f4783e5421177bdf8e7efc51cf9e28b8bf8284fc82f6a5f15a,doi-metadata-update,Zenodo DOI metadata
 configs/alpha_sensitivity/alpha_000.yaml,configurations/alpha_sensitivity/alpha_000.yaml,3475,7f3c7ee4dc8be041da938f1faebbcb5f8f4f39f5a83a5fafbcb28f171ef54c39,sanitized-copy,replaced local path for output_root; redacted embedded POSIX user path
 configs/alpha_sensitivity/alpha_001.yaml,configurations/alpha_sensitivity/alpha_001.yaml,3478,dfd4c48d4542b17223b621dfa8ec2ba8f512534633e1a1b16dbcef1c930373d6,sanitized-copy,replaced local path for output_root; redacted embedded POSIX user path
 configs/alpha_sensitivity/alpha_005.yaml,configurations/alpha_sensitivity/alpha_005.yaml,3478,f3e5e2e33ce00767881b7fd8af4382d6b322113a6ca8a9b6a46602b27a3bb905,sanitized-copy,replaced local path for output_root; redacted embedded POSIX user path
