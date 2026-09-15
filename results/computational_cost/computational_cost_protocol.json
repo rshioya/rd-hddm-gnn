@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-08-19T19:18:13+0900",
+  "host": "cm3",
+  "project_root": null,
+  "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "torch": "2.13.0+cu126",
+  "cuda_runtime": "12.6",
+  "device": "cuda",
+  "gpu": "NVIDIA TITAN RTX",
+  "sample_count": 400,
+  "warmup": 10,
+  "repeats": 3,
+  "synchronization": "torch.cuda.synchronize before and after each timed inference",
+  "training_time_source": "outputs_training_time_remeasurement/measured_training_times.csv",
+  "hook_sha256": "3452a7a0a8c40976628b972d0a201d621a8332dfdfa4c8dc65a293db4c7c7dad",
+  "manifest_sha256": "60a767bda59ac4fe32287cfdb0ce8d74caf67dde04ae4ea2ba190d32d3b42bc3"
+}

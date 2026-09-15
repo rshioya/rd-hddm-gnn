@@ -1,0 +1,38 @@
+{
+  "input": "private-source://routeA_experiments/outputs_frozen_ood_20seed",
+  "models": [
+    "mesh_gnn",
+    "fine_control",
+    "residual_v2"
+  ],
+  "shapes": [
+    "slit_bridge",
+    "three_hole_asymmetric"
+  ],
+  "seeds": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "sample_rows": 24000,
+  "seed_shape_rows": 120,
+  "paired_test_rows": 20,
+  "improvement_definition": "baseline error minus residual_v2 error"
+}

@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-09-15T03:08:33.297872+00:00",
+  "build_host_paths_recorded": false,
+  "policy": "code-free reproducibility package",
+  "copied_or_generated_files": 177,
+  "private_implementation_copied": false,
+  "original_build_report_copied": false,
+  "package_directory": "."
+}

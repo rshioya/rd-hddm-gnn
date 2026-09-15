@@ -1,0 +1,11 @@
+{
+  "partition_rows": 1350,
+  "mesh_rows": 450,
+  "repair_events": 31,
+  "regeneration_events": 1,
+  "expected_three_methods_per_mesh": true,
+  "bfs_all_connected": true,
+  "repaired_all_connected": true,
+  "all_parts_nonempty_after_repair": true,
+  "raw_edgecut_matches_library": true
+}

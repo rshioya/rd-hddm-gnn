@@ -1,0 +1,9 @@
+name: rd-hddm-gnn
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - -r requirements.txt

@@ -1,0 +1,7 @@
+Quantity,mesh_backbone_control,rd_hddm_alpha001
+Trainable parameters,"81,348","81,348"
+Executed-path parameters,"81,348","81,348"
+Training time per seed (s),532.3 +/- 59.4,484.8 +/- 83.6
+Inference time per sample (s),0.002581 +/- 0.000005,0.002596 +/- 0.000005
+Inference time per 400 samples (s),1.032,1.038
+Peak GPU memory (MiB),226.0 +/- 0.0,226.0 +/- 0.0

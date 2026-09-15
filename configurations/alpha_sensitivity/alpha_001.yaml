@@ -1,0 +1,193 @@
+experiment_name: routeA_expanded_review
+output_root: outputs
+project_root: .
+randomness:
+  training_seeds:
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+  - 54
+  - 55
+  - 56
+  - 57
+  - 58
+  - 59
+  - 60
+  final_ood_seed: 20260814
+  bootstrap_seed: 20260815
+final_ood:
+  frozen: true
+  shapes:
+    c_shape: 200
+    two_hole: 200
+  requested_interior_nodes:
+  - 900
+  - 1400
+  num_sensors: 24
+  num_subdomains: 16
+  temperature_reference: 0.01
+  output_dir: outputs/final_ood
+models:
+  mesh_gnn:
+    family: native
+    enabled: true
+  hddm_geometry:
+    family: native
+    enabled: true
+    coarse_message_passing: true
+    centering: true
+    node_gate: true
+  hddm_no_message:
+    family: native
+    enabled: true
+    coarse_message_passing: false
+    centering: true
+    node_gate: true
+  senseiver:
+    family: baseline
+    enabled: false
+    latent_dim: 128
+    num_heads: 8
+    num_layers: 4
+    query_chunk_size: 2048
+  recfno:
+    family: baseline
+    enabled: false
+    grid_size:
+    - 128
+    - 128
+    width: 48
+    modes:
+    - 20
+    - 20
+    num_layers: 4
+  multires_gnn:
+    family: baseline
+    enabled: false
+    latent_dim: 128
+    fine_layers: 3
+    coarse_layers: 3
+    radius_quantile: 0.1
+training:
+  optimizer: adamw
+  learning_rate: 0.001
+  weight_decay: 1.0e-05
+  batch_size: 4
+  max_epochs: 500
+  early_stopping_patience: 50
+  scheduler: reduce_on_plateau
+  scheduler_factor: 0.5
+  scheduler_patience: 15
+  gradient_clip_norm: 1.0
+  selection_metric: validation_mae
+  mixed_precision: false
+  num_workers: 4
+statistics:
+  confidence: 0.95
+  bootstrap_repetitions: 20000
+  primary_unit: training_seed
+  metrics:
+  - mae
+  - relative_l2
+  - max_abs_error
+  - p95_abs_error
+  - p99_abs_error
+  paired_tests:
+  - student_t
+  - wilcoxon
+  - sign_test
+  - bootstrap
+sensitivity:
+  subdomain_counts:
+  - 4
+  - 8
+  - 16
+  - 32
+  sensor_counts:
+  - 8
+  - 16
+  - 24
+  - 48
+  sensor_placements:
+  - farthest_point
+  - random
+  - gradient_aware
+  seeds:
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+peak_error:
+  graph_distance_bins:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 5
+  - 999999
+  physical_boundary_distance_quantiles:
+  - 0.05
+  - 0.1
+  - 0.25
+  save_top_k_nodes_per_sample: 20
+  analyze_gate: true
+  analyze_correction_norm: true
+  ablations:
+  - name: centered_node_gate
+    centering: true
+    gate: node
+  - name: uncentered_node_gate
+    centering: false
+    gate: node
+  - name: centered_scalar_gate
+    centering: true
+    gate: scalar
+  - name: centered_no_gate
+    centering: true
+    gate: none
+reporting:
+  manuscript_csv_dir: outputs/summaries
+  save_per_sample_predictions: true
+  save_per_node_diagnostics: true
+partition:
+  parmetis_processes: 4
+  parmetis_executable: ../parmetis_partition
+  balance_tolerance: 1.2
+multigrid_residual:
+  hidden: 64
+  fine_layers: 2
+  coarse_layers: 1
+  cycles: 1
+  sensor_value_index: 4
+  sensor_mask_index: 3
+  node_area_index: 5
+  source_index: null
+  observation_weight: 1.0
+  laplacian_weight: 0.0
+  correction_scale: 0.01
+  boundary_blend_init: 0.35
+  detach_between_cycles: false
+mesh_backbone_residual:
+  hidden: 64
+  mesh_layers: 6
+  coarse_layers: 1
+  correction_scale: 0.01
+  sensor_mask_index: 3
+  sensor_value_index: 4
+  node_area_index: 5
+  freeze_backbone: false
+recalculation_metadata:
+  source_config: private-source://routeA_experiments/configs/routeA_mesh_backbone_residual.yaml
+  correction_scale: 0.01
+  purpose: RD-HDDM-GNN alpha sensitivity / final recalculation

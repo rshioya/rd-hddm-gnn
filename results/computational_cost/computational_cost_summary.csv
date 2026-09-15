@@ -1,0 +1,3 @@
+condition,trainable_parameters,executed_path_parameters,training_time_seconds_mean,training_time_seconds_sd,inference_seconds_per_sample_mean,inference_seconds_per_sample_sd_between_seeds,inference_seconds_per_400_samples_mean,peak_gpu_allocated_mib_mean,peak_gpu_allocated_mib_sd
+mesh_backbone_control,81348,81348,532.2784123107791,59.35519154389455,0.0025805838489516945,4.781936943591025e-06,1.0322335395806779,225.97509765625,0.0
+rd_hddm_alpha001,81348,81348,484.7796760657802,83.59589503295453,0.0025956289887350673,4.5127369786319434e-06,1.038251595494027,225.97509765625,0.0

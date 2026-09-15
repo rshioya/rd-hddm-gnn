@@ -1,0 +1,2 @@
+dataset,split,seed,sample_index,shape,requested_nodes,base_seed,attempt,sample_seed,error
+development,train,42,35,wavy,425,77,1,77,Disconnected mesh artifact is too large: removed_fraction=0.0129 > 0.0100. Regenerate this sample instead of silently discarding it.

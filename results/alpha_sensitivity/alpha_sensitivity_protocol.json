@@ -1,0 +1,32 @@
+{
+  "alphas": {
+    "a000": 0.0,
+    "a001": 0.01,
+    "a005": 0.05,
+    "a010": 0.1,
+    "a025": 0.25
+  },
+  "seeds": [
+    41,
+    42,
+    43,
+    44,
+    45
+  ],
+  "shapes": [
+    "c_shape",
+    "two_hole"
+  ],
+  "metrics": [
+    "mae",
+    "relative_l2",
+    "max_abs_error",
+    "p95_abs_error",
+    "p99_abs_error"
+  ],
+  "sample_rows": 10000,
+  "seed_shape_rows": 50,
+  "paired_test_rows": 40,
+  "improvement_definition": "alpha=0 error minus candidate-alpha error",
+  "selection_note": "Select alpha on development geometries only. Freeze the selected value before creating or evaluating the next prospective OOD set."
+}

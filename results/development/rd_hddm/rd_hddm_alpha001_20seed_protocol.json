@@ -1,0 +1,47 @@
+{
+  "selected_alpha": 0.01,
+  "conditions": [
+    "mesh_backbone_control",
+    "rd_hddm_alpha001"
+  ],
+  "seeds": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "shapes": [
+    "c_shape",
+    "two_hole"
+  ],
+  "samples_per_shape": 200,
+  "metrics": [
+    "mae",
+    "relative_l2",
+    "max_abs_error",
+    "p95_abs_error",
+    "p99_abs_error"
+  ],
+  "sample_rows": 16000,
+  "seed_shape_rows": 80,
+  "paired_test_rows": 10,
+  "improvement_definition": "control error minus RD-HDDM-GNN error",
+  "holm_full_family": "2 shapes x 5 metrics",
+  "primary_mae_family": "2 MAE tests"
+}

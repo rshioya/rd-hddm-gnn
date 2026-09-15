@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-08-13T16:16:03Z",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+  "numpy": "2.5.2",
+  "scipy": "1.18.0",
+  "torch": "2.13.0+cu130",
+  "cuda_available": true,
+  "cuda_version": "13.0",
+  "gpu": "NVIDIA TITAN RTX",
+  "mpiexec": "mpiexec (OpenRTE) 4.1.6",
+  "parmetis_executable": "private-source://parmetis_partition",
+  "parmetis_sha256": "ec0c3d2236cdb3a709f7867a1f9adc7dc289988eec70bbc767eb948feaccb6f3",
+  "parmetis_processes": 4,
+  "num_subdomains": 16,
+  "balance_tolerance": 1.2,
+  "temperature_reference": 0.01,
+  "num_sensors": 24,
+  "idx_type_width": 32,
+  "real_type_width": 32,
+  "shape_mesh_dataset.py": {
+    "sha256": "51093eea2c925606d4690c8ebbaba03248a914317ce413e009792b40a8eed246",
+    "bytes": 13148
+  },
+  "parmetis_partition.py": {
+    "sha256": "1d769fd417e02c8339901957a7ded938fba0cd701ea1ac2bb6a9c741f65e465c",
+    "bytes": 10705
+  },
+  "bfs_partition.py": {
+    "sha256": "53137e2d1bb85f955e216371417ea3ed56810486205ef0dc6ddfb4d8769eb940",
+    "bytes": 8924
+  },
+  "final_ood_shapes_dedicated.py": {
+    "sha256": "91e104f2c85d8012c8c556bee0860ac574dd820625d7bb8feb12f6be6c006df8",
+    "bytes": 3541
+  }
+}
